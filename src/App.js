@@ -34,8 +34,7 @@ function App() {
       .then((res) => res.text())
       .then((rep) => {
         const data = JSON.parse(rep.substr(47).slice(0, -2));
-        console.log(data.table.rows.length);
-        if (data.table.rows.length == 0) {
+        if (data?.table?.rows?.length == 0 || !data) {
           setDetails([]);
           setError(
             "Invalid invoice number please enter correct invoice number"
@@ -47,7 +46,7 @@ function App() {
         //     setHeading(heading)
         // })
         else {
-          data.table.rows.forEach((main) => {
+          data?.table?.rows.forEach((main) => {
             setError("");
             setDetails(main.c);
             setPending(false);

@@ -5,7 +5,7 @@ function Input({setId,id,handleFetch,inputError}) {
     <div className='userInputDiv'>
       <div className='userInput'>
       <label htmlFor='invoice'>Invoice Number</label>
-        <input id='invoice' placeholder='Invoice number...' value={id} onChange={e=>setId(e.target.value)}/>
+        <input type='number' id='invoice' placeholder='Invoice number...' value={id} onChange={e=>setId(e.target.value)} onWheel={()=>false}/>
         <span>{inputError}</span>
       </div>
       <div className='submitBtn'>
