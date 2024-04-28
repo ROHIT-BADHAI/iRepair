@@ -2,7 +2,7 @@ import React from 'react'
 
 function Details({details}) {
   return (
-    <div>
+    <div className='detailsDiv'>
     <h2>Customer Details!</h2>
     <div>
     <table className='detailsTable' border="1px">

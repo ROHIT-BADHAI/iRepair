@@ -124,7 +124,6 @@ hr{
 .detailsTable{
   width: 100%;
   border-collapse: collapse;
-  width: 500px;
 }
 .detailsTable td{
   padding: 10px;
@@ -162,4 +161,7 @@ background-color: #e5e4e2;
   color: #c3cd32;
   text-shadow: 1px 1px 2px green;
   border-bottom: 2px solid #c3cd32;
+}
+.detailsDiv{
+  width: 60%;
 }
