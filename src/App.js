@@ -27,6 +27,7 @@ function App() {
       setPending(false)
       setInputError("Please enter your invoice number!");
       setError("")
+      setDetails({})
       return;
     }
     setInputError("");
@@ -67,7 +68,7 @@ function App() {
           handleFetch={handleFetch}
           inputError={inputError}
         />
-        {pending?<img height="40px" width="40px" src={loader}/>: details.length > 0 ? <Details details={details} /> : <h2>{error}</h2>}
+        {pending?<img className="loader" height="40px" width="40px" src={loader}/>: details.length > 0 ? <Details details={details} /> : <span className="error2">{error}</span>}
       </div>
       <div className="footer">
         <Footer />

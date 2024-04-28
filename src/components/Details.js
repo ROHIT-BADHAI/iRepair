@@ -5,10 +5,24 @@ function Details({details}) {
     <div>
     <h2>Customer Details!</h2>
     <div>
-      <h4>Name  - {details[0]?.v}</h4>
-      <h4>Device - {details[1]?.v} {details[2]?.v}</h4>
-      <h4>Issue - {details[3]?.v}</h4>
-      <h4>Status - <span> {details[4]?.v} </span></h4>
+    <table className='detailsTable' border="1px">
+      <tr>
+        <td>Name</td>
+        <td>{details[0]?.v}</td>
+      </tr>
+      <tr>
+        <td>Device</td>
+        <td>{details[1]?.v} {details[2]?.v}</td>
+      </tr>
+      <tr>
+        <td>Issue</td>
+        <td>{details[3]?.v}</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td><span> {details[4]?.v} </span></td>
+      </tr>
+    </table>
       </div>
     </div>
   )

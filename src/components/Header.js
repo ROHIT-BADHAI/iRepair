@@ -4,10 +4,11 @@ function Header() {
   return (
     <div className='navContainer'>
       <div className='leftNav'>
-        <div>iRepairs</div>
+        <div className="logo">iRepairs</div>
       </div>
       <div className='rightNav'>
-        <div>Email / contact no</div>
+        <div>Contact us at - 9339331818 / 9339330505
+</div>
       </div>
     </div>
   )

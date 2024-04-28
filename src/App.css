@@ -4,20 +4,32 @@
   box-sizing: border-box;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .userInputDiv{
-  height: 200px;
-  width: 300px;
+  height: 220px;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
   box-sizing: border-box;
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .userInput{
   margin: 10px;
   height:90px;
   width: 90%;
   box-sizing: border-box;
+  
 }
 .userInput>input{
   height: 2rem;
@@ -25,6 +37,10 @@
   margin-top: 10px;
   width: 100%;
   box-sizing: border-box;
+  border: 2px solid;
+  border-color: #b4a9a9;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 .submitBtn{
   margin: 10px;
@@ -32,9 +48,17 @@
   box-sizing: border-box;
 }
 .submitBtn>button{
-  width: 100%;
+  width: 40%;
   box-sizing: border-box;
   height: 2rem;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .nav{
   height: 10vh;
@@ -47,6 +71,7 @@
 }
 .footer{
   height: 20vh;
+  font-size: 0.8rem;
 }
 .navContainer{
   display: flex;
@@ -76,12 +101,65 @@
 }
 
 .footer>div>div{
-  height: 40px;
+  /* height: 40px; */
   display: flex;
+  max-height: 100%;
   justify-content: center;
   align-items: center;
 }
 .footer p{
   display: flex;
   align-items: center;
+}
+.content{
+  background-color: #eeeeee;
+}
+hr{
+  color: black;
+}
+
+.follow>svg{
+  cursor: pointer;
+}
+.detailsTable{
+  width: 100%;
+  border-collapse: collapse;
+  width: 500px;
+}
+.detailsTable td{
+  padding: 10px;
+}
+.detailsTable>tr:nth-child(even){
+background-color: #e5e4e2;
+}
+.detailsTable>tr:nth-child(odd){
+  background-color: white;
+}
+.error1{
+  color: red;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+.error2{
+  color: red;
+  font-weight: bolder;
+}
+.inputHeaderDiv{
+  width: 90%;
+  margin: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b4a9a9;
+}
+.inputHeaderDiv>h4{
+  margin: 0px;
+}
+
+.logo{
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: #c3cd32;
+  text-shadow: 1px 1px 2px green;
+  border-bottom: 2px solid #c3cd32;
 }
