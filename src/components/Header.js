@@ -7,7 +7,7 @@ function Header() {
         <div className="logo">iRepairs</div>
       </div>
       <div className='rightNav'>
-        <div>Contact us at - 9339331818 / 9339330505
+        <div>Contact - 9339331818 / 9339330505
 </div>
       </div>
     </div>
