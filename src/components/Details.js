@@ -22,6 +22,7 @@ function Details({details}) {
     <h2>Customer Details!</h2>
     <div>
     <table className='detailsTable' border="1px">
+    <tbody>
     <tr>
         <td>Time</td>
         <td>{dateTime}</td>
@@ -42,6 +43,7 @@ function Details({details}) {
         <td>Status</td>
         <td><span className={`status ${details[5]?.v.replace(' ','').toLowerCase()}`}> {details[5]?.v} </span></td>
       </tr>
+      </tbody>
     </table>
       </div>
     </div>
