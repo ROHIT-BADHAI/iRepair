@@ -136,10 +136,10 @@ hr{
 .detailsTable td{
   padding: 5px;
 }
-.detailsTable>tr:nth-child(even){
+.detailsTable tr:nth-child(even){
 background-color: #e5e4e2;
 }
-.detailsTable>tr:nth-child(odd){
+.detailsTable tr:nth-child(odd){
   background-color: white;
 }
 .error1{
