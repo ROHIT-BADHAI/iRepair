@@ -15,7 +15,7 @@ function App() {
   let SHEET_ID = "16ME-6bxONaXXJPNyGTEhmMEeKSTm8yFYmwbpa91NBBk";
   let SHEET_TITLE = "iRepairs";
 
-  const query = encodeURIComponent(`Select C,F,G,I,M where A=${id}`);
+  const query = encodeURIComponent(`Select B,C,F,G,I,M where A=${id}`);
   const url =
     `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?` +
     "&tq=" +
@@ -31,6 +31,7 @@ function App() {
       return;
     }
     setInputError("");
+
     fetch(url)
       .then((res) => res.text())
       .then((rep) => {

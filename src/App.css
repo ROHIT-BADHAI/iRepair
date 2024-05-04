@@ -13,7 +13,7 @@ body{
 }
 
 .userInputDiv{
-  height: 220px;
+  height: 200px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -21,19 +21,19 @@ body{
   margin: 10px;
   box-sizing: border-box;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .userInput{
-  margin: 10px;
+  margin: 5px;
   height:90px;
   width: 90%;
   box-sizing: border-box;
-  
+  font-family: "Platypi", serif;
 }
 .userInput>input{
   height: 2rem;
-  margin-bottom:10px ;
+  margin-bottom:5px ;
   margin-top: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -43,18 +43,21 @@ body{
   font-size: 1rem;
 }
 .submitBtn{
-  margin: 10px;
+  margin: 5px;
   width: 90%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 .submitBtn>button{
-  width: 200px;
+  width: 80%;
   box-sizing: border-box;
   height: 2.5rem;
   background-color: black;
   border-radius: 10px;
   color: white;
   border: none;
+  font-size: 1.2rem;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -72,10 +75,11 @@ body{
 .footer{
   height: 20vh;
   font-size: 0.8rem;
+  font-family: "Platypi", serif;
 }
 .navContainer{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
   color: white;
@@ -83,7 +87,7 @@ body{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .leftNav{
-  margin-left:70px;
+  /* margin-left:70px; */
 }
 .rightNav{
   margin-right: 120px;
@@ -124,11 +128,12 @@ hr{
   cursor: pointer;
 }
 .detailsTable{
+  font-family: "Platypi", serif;
   width: 100%;
   border-collapse: collapse;
 }
 .detailsTable td{
-  padding: 10px;
+  padding: 2px;
 }
 .detailsTable>tr:nth-child(even){
 background-color: #e5e4e2;
@@ -147,7 +152,7 @@ background-color: #e5e4e2;
 }
 .inputHeaderDiv{
   width: 90%;
-  margin: 10px;
+  margin: 5px;
   padding-bottom: 8px;
   border-bottom: 1px solid #b4a9a9;
 }
@@ -156,13 +161,14 @@ background-color: #e5e4e2;
 }
 
 .logo{
-  font-family: "Pattaya", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
   font-size: 2rem;
-  color: #c3cd32;
-  text-shadow: 1px 1px 2px green;
-  border-bottom: 2px solid #c3cd32;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px rgb(52, 213, 52);
+  border-bottom: 2px solid #145c70;
 }
 .detailsDiv{
   width: 60%;
