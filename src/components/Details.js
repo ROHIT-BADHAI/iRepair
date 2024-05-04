@@ -19,7 +19,7 @@ function Details({details}) {
     let dateTime=dateArray[2]+" "+month[dateArray[1]-1]+" "+dateArray[0]+" / Time - "+(dateArray[3]%12==0?12:dateArray[3]%12)+" : "+dateArray[4]+" "+(dateArray[3]<12?"am":"pm");
   return (
     <div className='detailsDiv'>
-    <h2>Customer Details!</h2>
+    <h2>Tracking Details!</h2>
     <div>
     <table className='detailsTable' border="1px">
     <tbody>
