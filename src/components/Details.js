@@ -16,14 +16,14 @@ function Details({details}) {
     'November',
     'December'
     ];
-    let dateTime=dateArray[2]+" "+month[dateArray[1]-1]+" "+dateArray[0]+"  Time - "+dateArray[3]+" "+dateArray[4];
+    let dateTime=dateArray[2]+" "+month[dateArray[1]-1]+" "+dateArray[0]+" / Time - "+(dateArray[3]%12==0?12:dateArray[3]%12)+" : "+dateArray[4]+" "+(dateArray[3]<12?"am":"pm");
   return (
     <div className='detailsDiv'>
     <h2>Customer Details!</h2>
     <div>
     <table className='detailsTable' border="1px">
     <tr>
-        <td>Timestamp</td>
+        <td>Time</td>
         <td>{dateTime}</td>
       </tr>
       <tr>
@@ -40,7 +40,7 @@ function Details({details}) {
       </tr>
       <tr>
         <td>Status</td>
-        <td><span> {details[5]?.v} </span></td>
+        <td><span className={`status ${details[5]?.v.replace(' ','').toLowerCase()}`}> {details[5]?.v} </span></td>
       </tr>
     </table>
       </div>

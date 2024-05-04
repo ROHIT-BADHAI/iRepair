@@ -133,7 +133,7 @@ hr{
   border-collapse: collapse;
 }
 .detailsTable td{
-  padding: 2px;
+  padding: 5px;
 }
 .detailsTable>tr:nth-child(even){
 background-color: #e5e4e2;
@@ -167,9 +167,29 @@ background-color: #e5e4e2;
     font-style: normal;
   font-size: 2rem;
   color: whitesmoke;
-  text-shadow: 1px 1px 2px rgb(52, 213, 52);
-  border-bottom: 2px solid #145c70;
+  text-shadow: 1px 1px 2px rgb(4, 28, 67);
+  border-bottom: 2px solid whitesmoke;
 }
 .detailsDiv{
   width: 60%;
+}
+
+.status{
+  border-radius: 1rem;
+  padding: 2px 10px 2px 10px;
+}
+
+.delivered{
+  background-color: #50c878;
+}
+.pending{
+  background-color: #f8de7e;
+}
+
+.inTransport{
+  background-color:#FFAE42 ;
+}
+
+.return{
+background-color: rgb(234, 82, 82);
 }
