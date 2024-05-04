@@ -46,11 +46,9 @@ body{
   margin: 5px;
   width: 90%;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
 }
 .submitBtn>button{
-  width: 80%;
+  width: 40%;
   box-sizing: border-box;
   height: 2.5rem;
   background-color: black;
@@ -203,9 +201,31 @@ background-color: rgb(234, 82, 82);
     width: 80%;
   }
   .content{
-    height: 65vh;
+    height: 75vh;
   }
   .footer{
-    height: 25vh;
+    height: 15vh;
+  }
+  .submitBtn{
+    margin: 5px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  .submitBtn>button{
+    width: 100%;
+    box-sizing: border-box;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  
   }
 }
