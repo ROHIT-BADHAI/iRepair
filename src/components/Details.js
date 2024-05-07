@@ -41,7 +41,7 @@ function Details({details}) {
       </tr>
       <tr>
         <td>Status</td>
-        <td><span className={`status ${details[5]?.v.replace(' ','').toLowerCase()}`}> {details[5]?.v} </span></td>
+        <td><span className={`status ${details[5]?.v?.replace(' ','').toLowerCase()}`}> {details[5]?.v} </span></td>
       </tr>
       </tbody>
     </table>

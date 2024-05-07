@@ -1,5 +1,6 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
+import logo from "./components/logo.jpg"
 import Input from "./components/Input";
 import { useState } from "react";
 import Details from "./components/Details";
@@ -12,12 +13,10 @@ function App() {
   const [error, setError] = useState("");
   const [inputError, setInputError] = useState("");
   const [pending, setPending] = useState(false);
-  let SHEET_ID = "16ME-6bxONaXXJPNyGTEhmMEeKSTm8yFYmwbpa91NBBk";
-  let SHEET_TITLE = "iRepairs";
 
   const query = encodeURIComponent(`Select B,C,F,G,I,M where A=${id}`);
   const url =
-    `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?` +
+    process.env.REACT_APP_URL +
     "&tq=" +
     query;
 
@@ -62,6 +61,7 @@ function App() {
       <div className="nav">
         <Header />
       </div>
+    
       <div className="content">
         <Input
           setId={setId}
